@@ -9917,11 +9917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\MyProjectCore\\WebAPI2\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\.netcore\\WebAPI2\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\WebAPI2\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\WebAPI2\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\MyProjectCore\\WebAPI2\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\.netcore\\WebAPI2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9936,9 +9936,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\HP\\source\\MyProjectCore\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\Business\\Business.csproj"
+            "C:\\Users\\HP\\Desktop\\.netcore\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\Business\\Business.csproj"
             }
           }
         }
@@ -9951,6 +9952,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MicroKnights.Log4NetAdoNetAppender": {
             "target": "Package",
@@ -9983,7 +9985,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -40,7 +40,7 @@ namespace Business.Concrete
         [ValidationAspect(typeof(ProductValidator))]
         [CacheAspect(1)]
         [LogAspect(typeof(FileLogger))]
-        [PerformanceAspect(1, typeof(FileLogger))]
+        [PerformanceAspect(1, typeof(DatabaseLogger))]
         public IResult Add(Product product)
         {
             IResult result = BusinessRules.Run(_businessRules.CheckIfProductNameExists(product.ProductName));

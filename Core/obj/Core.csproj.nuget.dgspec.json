@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\MyProjectCore\\Core\\Core.csproj": {}
+    "C:\\Users\\HP\\Desktop\\.netcore\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\MyProjectCore\\Core\\Core.csproj": {
+    "C:\\Users\\HP\\Desktop\\.netcore\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\MyProjectCore\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.netcore\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\MyProjectCore\\Core\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\.netcore\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
@@ -95,7 +97,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

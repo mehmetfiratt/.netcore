@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LAoC5usF9AVE5fiecpUMP6qQXaLuT7QYw7bC3XTKkMGmhC5ByGErjzWLxf8y11OviHZJBq4/3jMN6AqOvlACxg==",
+  "dgSpecHash": "0uRO0lQvWDCCXIFvYXFwSBcvOZOsAMjIAs8WI3mJ+OFKqanhkjaNxSRnYQWSu6tLvx8iCHtgACMS42ZJVXJteg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\MyProjectCore\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\.netcore\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\autofac\\5.1.0\\autofac.5.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

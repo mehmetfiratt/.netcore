@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rR9QHSEmhGT17lacqa0uTyiRjZTDaUBYog7RtZ7IxsjgXOvetQ92pV8Wmd8SamK0daFpc7b/rAJjYptRWHdW7w==",
+  "dgSpecHash": "lcnPYoG1YKyqHUst8KqbynOdDjoZWbTxWbwR5cAgJIxV8q+2Tscylug5950FBoIDYrnjNdmyFRmtHkYwpLs2Dw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\MyProjectCore\\WebAPI2\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\.netcore\\WebAPI2\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\autofac\\5.1.0\\autofac.5.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

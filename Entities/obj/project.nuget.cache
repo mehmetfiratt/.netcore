@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BQsNk0LX74a1AXUqKZSCOPOb/3COs7MPFrg++dw35zRskom83KhOvmQ0VO5P35a+VqTrjxrQcrAx8cqSV18aJA==",
+  "dgSpecHash": "lNZSNwaUmABWgryvOfb+w/aVXBK1JV2+UBy+4oL3IURLJleoFJK1biJirOhglNADfxmrHFnCRXZHSfcwI2VI9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\MyProjectCore\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\.netcore\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\autofac\\5.1.0\\autofac.5.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

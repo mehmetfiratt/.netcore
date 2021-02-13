@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qi+Z7+j8ZNrEzllZdF2EYb1Me/jGgVJlestgK8AqwjKhXmNfRMV9hp60cZCYwBUEmAeorHz3qIeTAV06PlJ//w==",
+  "dgSpecHash": "IO5yoNb3fENLSpZ6iuntMsT7SCABDV7snXAjNl/p1A+c9dJt5M4NXi6nIV30qapNdH2zZvFZbcqHbURa6yhg4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\MyProjectCore\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\.netcore\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\autofac\\5.1.0\\autofac.5.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

@@ -8301,11 +8301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\MyProjectCore\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\.netcore\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\MyProjectCore\\Business\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\.netcore\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8320,12 +8320,13 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\HP\\source\\MyProjectCore\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\HP\\Desktop\\.netcore\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\HP\\source\\MyProjectCore\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\MyProjectCore\\Entities\\Entities.csproj"
+            "C:\\Users\\HP\\Desktop\\.netcore\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\.netcore\\Entities\\Entities.csproj"
             }
           }
         }
@@ -8338,6 +8339,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http": {
             "target": "Package",
@@ -8360,7 +8362,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.Mime;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
@@ -10,7 +12,7 @@ namespace Core.Extensions
 {
     public class ExceptionMiddleware
     {
-        private RequestDelegate _next;
+        private readonly RequestDelegate _next;
 
         public ExceptionMiddleware(RequestDelegate next)
         {
@@ -32,19 +34,36 @@ namespace Core.Extensions
         private Task HandleExceptionAsync(HttpContext httpContext, Exception e)
         {
             httpContext.Response.ContentType = "application/json";
-            httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-            string message = "Internal Server Error";
-            if (e.GetType() == typeof(ValidationException))
-            {
-                message = e.Message;
-            }
+            string message = SetErrorMessageAndCode(httpContext, e);
 
             return httpContext.Response.WriteAsync(new ErrorDetail
             {
                 StatusCode = httpContext.Response.StatusCode,
                 Message = message
             }.ToString());
+        }
+
+        private  string SetErrorMessageAndCode(HttpContext httpContext, Exception e)
+        {
+            string message;
+            if (e.GetType() == typeof(ValidationException))
+            {
+                message = e.Message;
+                httpContext.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
+            }
+            else if (e.GetType() == typeof(AuthenticationException))
+            {
+                httpContext.Response.StatusCode = (int) HttpStatusCode.Unauthorized;
+                message = e.Message;
+            }
+            else
+            {
+                message = "Internal Server Error";
+                httpContext.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
+            }
+
+            return message;
         }
     }
 }
