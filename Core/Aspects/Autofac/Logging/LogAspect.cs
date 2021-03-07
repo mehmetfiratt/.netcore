@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Castle.DynamicProxy;
 using Core.CrossCuttingConcerns.Logging;
 using Core.CrossCuttingConcerns.Logging.Log4net;
@@ -16,10 +17,10 @@ namespace Core.Aspects.Autofac.Logging
         {
             if (loggerService.BaseType != typeof(LoggerServiceBase))
             {
-                throw new System.Exception(AspectMessages.WrongLoggerType);
+                throw new ArgumentException(AspectMessages.WrongLoggerType);
             }
 
-            _loggerServiceBase = (LoggerServiceBase)Activator.CreateInstance(loggerService);
+            _loggerServiceBase = Activator.CreateInstance(loggerService) as LoggerServiceBase;
         }
 
         protected override void OnBefore(IInvocation invocation)
@@ -29,17 +30,15 @@ namespace Core.Aspects.Autofac.Logging
 
         private LogDetail GetLogDetail(IInvocation invocation)
         {
-            var logParameters = new List<LogParameter>();
-
-            for (int i = 0; i < invocation.Arguments.Length; i++)
-            {
-                logParameters.Add(new LogParameter
+            var logParameters = invocation.Arguments.Select((t, i) =>
+                new LogParameter
                 {
                     Name = invocation.GetConcreteMethod().GetParameters()[i].Name,
-                    Value = invocation.Arguments[i],
-                    Type = invocation.Arguments[i].GetType().Name
-                });
-            }
+                    Value = t,
+                    Type = t.GetType().Name
+
+                })
+                .ToList();
 
             var logDetail = new LogDetail
             {

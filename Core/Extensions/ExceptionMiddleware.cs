@@ -54,6 +54,10 @@ namespace Core.Extensions
             }
             else if (e.GetType() == typeof(AuthenticationException))
             {
+                httpContext.Response.StatusCode = (int) HttpStatusCode.Forbidden;
+                message = e.Message;
+            } else if (e.GetType() == typeof(UnauthorizedAccessException))
+            {
                 httpContext.Response.StatusCode = (int) HttpStatusCode.Unauthorized;
                 message = e.Message;
             }

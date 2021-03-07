@@ -15,12 +15,13 @@ using Core.Aspects.Autofac.Logging;
 using Core.Aspects.Autofac.Performance;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Caching.MemoryCache;
+using Core.CrossCuttingConcerns.Logging.Log4net;
 using Core.CrossCuttingConcerns.Logging.Log4net.Loggers;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Core.Utilities.Business;
-using BusinessRules = Core.Utilities.Business.BusinessRules;
+using Core.Utilities.Helpers;
 
 namespace Business.Concrete
 {
@@ -36,14 +37,11 @@ namespace Business.Concrete
         }
 
 
-        [SecuredOperation("Admin")]
-        [ValidationAspect(typeof(ProductValidator))]
-        [CacheAspect(1)]
-        [LogAspect(typeof(FileLogger))]
-        [PerformanceAspect(1, typeof(DatabaseLogger))]
+        [ValidationAspect(typeof(ProductValidator), Priority = 2)]
+        [SecuredOperation("Admin", Priority = 1)]
         public IResult Add(Product product)
         {
-            IResult result = BusinessRules.Run(_businessRules.CheckIfProductNameExists(product.ProductName));
+            IResult result = BusinessRulesRunner.Run(_businessRules.CheckIfProductNameExists(product.ProductName));
             if (result != null)
             {
                 return result;

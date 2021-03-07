@@ -8,7 +8,7 @@ namespace Core.CrossCuttingConcerns.Logging.Log4net
     [Serializable]
     public class SerializableLogEvent
     {
-        private LoggingEvent _loggingEvent;
+        private readonly LoggingEvent _loggingEvent;
 
         public SerializableLogEvent(LoggingEvent loggingEvent)
         {
@@ -16,6 +16,7 @@ namespace Core.CrossCuttingConcerns.Logging.Log4net
         }
 
         public object Message => _loggingEvent.MessageObject;
-        public object DateTime => _loggingEvent.TimeStampUtc;
+        public String LoggingTime => $"{_loggingEvent.TimeStamp}";
+
     }
 }

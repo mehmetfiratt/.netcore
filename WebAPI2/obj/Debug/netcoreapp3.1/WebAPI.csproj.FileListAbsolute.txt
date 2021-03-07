@@ -308,3 +308,4 @@ C:\Users\HP\Desktop\.netcore\WebAPI2\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyC
 C:\Users\HP\Desktop\.netcore\WebAPI2\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\HP\Desktop\.netcore\WebAPI2\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\HP\Desktop\.netcore\WebAPI2\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Users\HP\Desktop\.netcore\WebAPI2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

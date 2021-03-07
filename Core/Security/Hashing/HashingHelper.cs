@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Core.Security.Hashing
@@ -20,12 +21,9 @@ namespace Core.Security.Hashing
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
             {
                 var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
-                for (int i = 0; i < computedHash.Length; i++)
+                if (computedHash.Where((t, i) => t != passwordHash[i]).Any())
                 {
-                    if (computedHash[i] != passwordHash[i])
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
 

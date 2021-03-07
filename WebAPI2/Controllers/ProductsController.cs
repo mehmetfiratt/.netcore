@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -11,10 +12,7 @@ namespace WebAPI.Controllers
     {
         private readonly IProductService _productService;
 
-        public ProductsController(IProductService productService)
-        {
-            _productService = productService;
-        }
+        public ProductsController(IProductService productService) => _productService = productService;
 
         [HttpGet("getall")]
         public IActionResult GetAllProducts()
