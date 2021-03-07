@@ -16,7 +16,7 @@ namespace Core.CrossCuttingConcerns.Logging.Log4net
         }
 
         public object Message => _loggingEvent.MessageObject;
-        public String LoggingTime => $"{_loggingEvent.TimeStamp}";
+        public string LoggingTime => $"{_loggingEvent.TimeStamp}";
 
     }
 }

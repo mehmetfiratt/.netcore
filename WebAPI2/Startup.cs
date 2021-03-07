@@ -31,7 +31,6 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSession();
             services.AddControllers();
 
             services.AddCors(options =>
@@ -69,8 +68,8 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.ConfigureCustomExceptionMiddleware();
-            app.UseSession();
             app.UseCors(builder => builder.WithOrigins("http://localhost:61270").AllowAnyHeader());
             app.UseRouting();
             app.UseAuthentication();
